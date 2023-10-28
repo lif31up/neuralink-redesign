@@ -1,0 +1,54 @@
+.custom-image-scroller {
+  position: relative;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  display: block;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.custom-image-scroller h1 {
+  position: absolute;
+  bottom: 1rem;
+  color: white;
+}
+
+.custom-image-scroller-button-table {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+}
+.custom-image-scroller-button-table button {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+.custom-image-scroller-button-table button .custom-bullet {
+  display: inline-block;
+  width: 0;
+  height: 0.5rem;
+  transition: width 0.25s ease-in-out;
+  margin-right: 0.25rem;
+  background: black;
+  border-radius: 50%;
+}
+.custom-image-scroller-button-table button:hover {
+  color: black;
+  background: rgba(128, 128, 128, 0.5);
+}
+
+button.custom-active {
+  background: rgba(128, 128, 128, 0.5);
+  color: black;
+}
+button.custom-active .custom-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=ImageScroller.css.map */
