@@ -26,9 +26,9 @@ export default function Home() {
       </section>
       <ImgBlock src={"https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=1931&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} width={"100%"} height={"30rem"}/>
       <section className={"px-40 my-16"}>
-        <h1>Career</h1>
+        <h1>{"Patient Registry"}</h1>
         <p className={"text-2xl"}>
-          Developing brain-computer interfaces is an interdisciplinary challenge. We are looking to hire a wide range of people with diverse engineering, scientific, and operations expertise.
+          {"If you're interested in learning whether you may qualify for current and/or future Neuralink clinical trials, consider joining our Patient Registry."}
         </p>
       </section>
       <section className={"px-40 my-16"}>
