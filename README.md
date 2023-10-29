@@ -1,5 +1,7 @@
 # 개요
 평소에 흥미롭게 생각하는 뇌공학 회사인 <a href="https://neuralink.com">NEURALINK</a>의 웹사이트를 저만의 방식으로 새롭게 디자인해보았습니다.
+## 배포된 사이트 방문하기
+Vercel을 이용해서 배포 중: https://neuralink-redesign.vercel.app/
 ##  파일 체계
 ```
 Root
