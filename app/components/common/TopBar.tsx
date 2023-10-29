@@ -1,4 +1,3 @@
-import ImgBlock from "@/app/components/common/ImgBlock";
 import "@/styles/Common.css";
 import Link from "next/link";
 import {ReactNode} from "react";
