@@ -1,9 +1,11 @@
 import TopBar from "@/app/components/common/TopBar";
 import FrontContent from "@/app/components/feature/FrontContent";
+import Head from "next/head";
 
 export default function Home() {
-  return (
-    <main className="block min-h-screen bg-white">
+  return (<>
+    <title>Neuralink </title>
+    <div className={"block min-h-screen bg-white"}>
       <TopBar>{[
         {text:"Career",href:"",class:"p-0 m-0"},
         {text:"Contact",href:"",class:"p-0 m-0"},
@@ -25,6 +27,6 @@ export default function Home() {
         <h1>fucyou</h1>
         <p>dflsdjfljasl</p>
       </section>
-    </main>
-  )
+    </div>
+  </>)
 }
