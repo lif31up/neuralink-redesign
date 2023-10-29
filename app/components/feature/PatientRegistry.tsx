@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 export default function PatientRegistry(){
 	return(
 	<div className={"custom-front-content-block p-4 relative"}>
