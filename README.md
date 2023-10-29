@@ -20,6 +20,10 @@ Root
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 ![WebStorm](https://img.shields.io/badge/webstorm-143?style=for-the-badge&logo=webstorm&logoColor=white&color=black)
 
+![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white)
+
 ### 스타일 작성에 대한 지시사항
 간단한 레이아웃이나 의미적 요소들은 반응형 웹을 위해 `SCSS`를 통해 정의됩니다. 그 외에 추가적이거나 복잡한 `CSS` 정의를 필요로 하는 요소들은 `Tailwind CSS`로 작성했습니다.
 
