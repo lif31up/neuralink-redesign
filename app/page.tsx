@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <main className="block min-h-screen bg-white">
       <TopBar>{[
-        {text:"career",href:"",class:"p-0 m-0"},
-        {text:"contact",href:"",class:"p-0 m-0"},
-        {text:"patient registry",href:"/patient_registry",class:"custom-outline p-1 rounded-2xl px-4 hover:bg-black hover:text-white"}
+        {text:"Career",href:"",class:"p-0 m-0"},
+        {text:"Contact",href:"",class:"p-0 m-0"},
+        {text:"Patient Registry",href:"/patient_registry",class:"custom-outline p-1 rounded-2xl px-4 hover:bg-black hover:text-white"}
       ]}</TopBar>
       <div className={"h-16"}/>
       <FrontContent/>

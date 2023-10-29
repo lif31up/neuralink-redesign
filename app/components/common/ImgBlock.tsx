@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ImgBlockProps{src:string,width:string,height:string}
 export default function ImgBlock({src,width,height}:ImgBlockProps){
 	const style = {
@@ -5,5 +7,5 @@ export default function ImgBlock({src,width,height}:ImgBlockProps){
 		width: width,
 		height: height
 	};//style definition
-	return(<div className={"bg-cover"} style={style}/>);
+	return(<Image src={src} alt={"image"} style={style}/>);
 }//ImgBlock
