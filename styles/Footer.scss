@@ -1,7 +1,13 @@
+@import "Library";
 .custom-footer{
   position: relative;
   width: 100%; height: 50vh;
   display: grid; grid-template-columns: repeat(3,1fr); justify-items: center;
   padding: 4rem 60% 0 4rem;
   background: whitesmoke;
+  @include mobile{
+    display: flex; gap: 1rem;
+    padding: 2rem 0 0 1rem;
+    width: 100%;
+  }
 }

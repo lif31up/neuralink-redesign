@@ -1,0 +1,13 @@
+@import "Library";
+.custom-top-bar{
+  position: fixed; z-index: 5;
+  width: 100%;
+  display: flex; justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  background: white;
+  @include mobile{
+    font-size: 0.75rem;
+    a{display: none;}
+    a.custom-outline{display: inline-block;}
+  }
+}

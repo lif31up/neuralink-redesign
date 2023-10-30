@@ -1,3 +1,4 @@
+@import "Library";
 .custom-image-scroller{
   position: relative;
   width: calc(100% - 2rem); height: calc(100% - 2rem);
@@ -12,12 +13,14 @@
 .custom-image-scroller-button-table{
   display: flex; gap: 1rem;
   width: fit-content; height: fit-content;
+  @include mobile{display: grid;}
   button{
     font-size: 0.75rem;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
     border-radius: 1rem;
     color: white;
     background: rgba(0, 0, 0, 0.5);
+    @include mobile{width: fit-content;}
 
     .custom-bullet{
       display: inline-block;

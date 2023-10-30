@@ -1,9 +1,25 @@
+/*BOX*/
+/*FLEX TOOLKIT*/
+/*FONT*/
+/*BACKGROUND*/
+/*PSEUDO*/
+/*FADE*/
 .custom-front-content {
   display: flex;
   width: calc(100% - 20rem);
   height: calc(100vh - 4rem);
   margin: 0 10rem 0 10rem;
   padding: 1rem 0 2rem 0;
+}
+@media only screen and (max-width: 500px) {
+  .custom-front-content {
+    display: grid;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: calc(100% - 1rem);
+    padding: 0;
+    height: fit-content;
+  }
 }
 
 .custom-front-content-left {
@@ -13,11 +29,23 @@
   width: 60%;
   height: 100%;
 }
+@media only screen and (max-width: 500px) {
+  .custom-front-content-left {
+    width: 100%;
+    height: calc(100vh - 6rem);
+  }
+}
 
 .custom-front-content-right {
   display: block;
   width: 40%;
   height: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .custom-front-content-right {
+    width: 100%;
+    height: 45rem;
+  }
 }
 .custom-front-content-right .custom-front-content-right-top {
   display: flex;

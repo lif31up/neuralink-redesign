@@ -1,18 +1,30 @@
+@import "Library";
 $height: calc(100vh - 4rem);
 
 .custom-front-content{
   display: flex;
   width: calc(100% - 20rem); height: $height;
   margin: 0 10rem 0 10rem; padding: 1rem 0 2rem 0;
+  @include mobile{
+    display: grid;
+    @include center-margin(0.5);
+    width: calc(100% - 1rem);
+    padding: 0; height: fit-content;
+  }
 }
 
 .custom-front-content-left{
   display: flex; justify-content: center; align-items: center;
   width: 60%; height: 100%;
+  @include mobile{
+    width: 100%;
+    height: calc(100vh - 6rem);
+  }
 }
 .custom-front-content-right{
   display: block;
   width: 40%; height: 100%;
+  @include mobile{width: 100%; height: 45rem;}
   .custom-front-content-right-top{
     display: flex; justify-content: center; align-items: center;
     width: 100%; height: 50%;

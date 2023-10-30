@@ -1,0 +1,28 @@
+/*BOX*/
+/*FLEX TOOLKIT*/
+/*FONT*/
+/*BACKGROUND*/
+/*PSEUDO*/
+/*FADE*/
+.custom-top-bar {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  background: white;
+}
+@media only screen and (max-width: 500px) {
+  .custom-top-bar {
+    font-size: 0.75rem;
+  }
+  .custom-top-bar a {
+    display: none;
+  }
+  .custom-top-bar a.custom-outline {
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=TopBar.css.map */
