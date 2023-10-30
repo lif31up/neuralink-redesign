@@ -6,6 +6,7 @@
 * SCSS로 의미적 요소를 추상화하여 정의하였습니다. 이를 통해 구조화된 반응형 웹 사이트를 만들 수 있었습니다. 이는 스타일의 유지보수에 대해 더 간단한 해결을 제공할 수 있습니다.
 * 주 페이지 안에서 전반적인 정보와 유지보수를 할 수 있는 요소 체계를 가지고 있습니다.
 * Next.js가 제공하는 이미지 최적화 요소인 `Image`의 스타일링을 최적화에 의미있는 범위 안에서 구체적으로 정의할 수 있습니다.
+* 일련의 문서 요소 배열에 대한 구조화된 스타일링을 보실 수 있습니다.
 ##  파일 체계
 ```
 Root
@@ -35,3 +36,6 @@ Root
 
 ### 그 외에 고려된 점들
 최대한 Next.js와 친숙해지는 계기가 되기 위해서 Client Side Rendering과 Server Side Rendering을 최대한 그럴듯한 맥락으로 사용해보았습니다. 이 점 참고하시고 살펴보시면 감사하겠습니다.
+
+### Lighthouse BenchMark
+<img alt="lighthouse bnechmark" src="/light_house_benchmark.png" width="919" height="135">
