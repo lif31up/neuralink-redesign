@@ -32,14 +32,14 @@ function ExpandableTag({h1,p}:ExpandableTagProps){
 	if(active){
 		return(
 		<div className={"custom-expandable-tag"} onClick={clickHandler}>
-			<h1>{h1}</h1>
-			<p>{p}</p>
+			<h2>{"▼"}</h2><h1>{h1}</h1>
+			<span><p>{p}</p></span>
 		</div>
 		);
 	}
 	return(
 	<div className={"custom-expandable-tag"} onClick={clickHandler}>
-		<h1>{h1}</h1>
+		<h2>{"►"}</h2><h1>{h1}</h1>
 	</div>
 	);
 }

@@ -4,5 +4,8 @@
 .custom-expandable-tag{
   cursor: pointer;
   border-bottom: solid black 1px;
-  h1{font-size: 2rem;}
+  transition: height 1s ease-in-out;
+  h1{font-size: 2rem; display: inline-block; width: calc(100% - 2rem);}
+  h2{font-size: 1rem; display: inline-block;}
+  p{animation: lazy-load 1s ease-in-out;}
 }

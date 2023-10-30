@@ -6,9 +6,19 @@
 .custom-expandable-tag {
   cursor: pointer;
   border-bottom: solid black 1px;
+  transition: height 1s ease-in-out;
 }
 .custom-expandable-tag h1 {
   font-size: 2rem;
+  display: inline-block;
+  width: calc(100% - 2rem);
+}
+.custom-expandable-tag h2 {
+  font-size: 1rem;
+  display: inline-block;
+}
+.custom-expandable-tag p {
+  animation: lazy-load 1s ease-in-out;
 }
 
 /*# sourceMappingURL=ExpendableTagTable.css.map */
