@@ -2,6 +2,8 @@
 import "@/styles/ImageScroller.css";
 import {atom, RecoilRoot, useRecoilState, useRecoilValue} from "recoil";
 import {useCallback} from "react";
+import ImgBlock from "@/app/components/common/ImgBlock";
+import Image from "next/image";
 export default function RecoilImageScroller(){
 	return(
 	<RecoilRoot>
@@ -22,8 +24,11 @@ function ImageScroller({}){
 	const activeIndex:number = useRecoilValue(activeIndexAtom);
 	activeStatus[activeIndex] = true;
 	return(
-	<div className={"custom-image-scroller"} style={{backgroundImage: `url("${ImageScrollerData[activeIndex].src}")`}}>
-		<div className={"custom-image-scroller-button-table"}>
+	<div className={"custom-image-scroller relative"}>
+		<div className={"w-full h-full relative object-cover"}>
+			<Image src={ImageScrollerData[activeIndex].src} width={"0"} height={"0"} alt={""}/>
+		</div>
+		<div className={"custom-image-scroller-button-table absolute"}>
 			<Menu text={ImageScrollerData[0].text} active={activeStatus[0]} index={0}/>
 			<Menu text={ImageScrollerData[1].text} active={activeStatus[1]} index={1}/>
 			<Menu text={ImageScrollerData[2].text} active={activeStatus[2]} index={2}/>

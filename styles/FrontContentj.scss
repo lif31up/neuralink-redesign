@@ -36,5 +36,6 @@ $height: calc(100vh - 4rem);
 }
 .custom-front-content-block{
   width: calc(100% - 2rem); height: calc(100% - 2rem);
-  border-radius: 1rem;
+  border-radius: 1rem; border: solid black 1px;
+  overflow: hidden;
 }

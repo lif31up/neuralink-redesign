@@ -5,6 +5,7 @@
   display: flex; justify-content: space-between;
   padding: 0 1rem 0 1rem;
   background: white;
+  border-bottom: solid black 1px;
   @include mobile{
     font-size: 0.75rem;
     a{display: none;}
