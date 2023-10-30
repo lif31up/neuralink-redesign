@@ -38,4 +38,4 @@ Root
 최대한 Next.js와 친숙해지는 계기가 되기 위해서 Client Side Rendering과 Server Side Rendering을 최대한 그럴듯한 맥락으로 사용해보았습니다. 이 점 참고하시고 살펴보시면 감사하겠습니다.
 
 ### Lighthouse BenchMark
-<img alt="lighthouse bnechmark" src="/light_house_benchmark.png" width="919" height="135">
+<img alt="lighthouse benchmark" src="/light_house_benchmark.png" width="919" height="135">

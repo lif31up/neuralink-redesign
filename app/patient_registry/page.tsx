@@ -2,6 +2,7 @@ import TopBar from "@/app/components/common/TopBar";
 import ExpandableTagTable from "@/app/components/feature/ExpendableTagTable";
 import Footer from "@/app/components/common/Footer";
 import Section from "@/app/components/common/Section";
+import "@/styles/Common.css";
 
 export default function patientRegistry(){
 	return(<>

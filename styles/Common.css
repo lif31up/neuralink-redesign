@@ -1,5 +1,18 @@
+@charset "UTF-8";
 .custom-outline {
   outline: solid black 1px;
+}
+
+.custom-arrow::after {
+  content: "↗";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.25s ease-in-out;
+}
+
+.custom-arrow:hover::after {
+  transform: translateY(-0.25rem) translateX(0.25rem);
 }
 
 /*# sourceMappingURL=Common.css.map */

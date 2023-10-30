@@ -23,21 +23,21 @@ export default function Home() {
         <p className={"text-2xl"}>
           Developing brain-computer interfaces is an interdisciplinary challenge. We are looking to hire a wide range of people with diverse engineering, scientific, and operations expertise.
         </p>
-        <Link className={"absolute right-1 bottom-1"} href={"career/"}>Explore All Open Roles</Link>
+        <Link className={"absolute right-1 bottom-1 custom-arrow"} href={"career/"}>Explore All Open Roles</Link>
       </Section>
       <Section>
         <h1>{"Biocompatible Enclosure"}</h1>
         <p className={"text-2xl"}>
           {"The N1 Implant is hermetically sealed in a biocompatible enclosure that withstands physiological conditions several times harsher than those in the human body."}
         </p>
-        <Link className={"absolute right-1 bottom-1"} href={"career/"}>See More about Biocompatible Enclosure</Link>
+        <Link className={"absolute right-1 bottom-1 custom-arrow"} href={"career/"}>See More about Biocompatible Enclosure</Link>
       </Section>
       <Section>
         <h1>Implant</h1>
         <p className={"text-2xl"}>
           {"Our brain-computer interface is fully implantable, cosmetically invisible, and designed to let you control a computer or mobile device anywhere you go."}
         </p>
-        <Link className={"absolute right-1 bottom-1"} href={"career/"}>See More about Implant Process</Link>
+        <Link className={"absolute right-1 bottom-1 custom-arrow"} href={"career/"}>See More about Implant Process</Link>
       </Section>
       <Section>
         <h1 className={"text-2xl"}>Implant</h1>
