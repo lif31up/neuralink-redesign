@@ -1,11 +1,12 @@
 'use client';//csr
-import {useCallback, useState} from "react";
+import {useCallback, useEffect, useState} from "react";
 import "@/styles/PopUp.css";
 export default function PopUp({}){
-	const [accpet,setAccept] = useState(false);
+	const [accept,setAccept] = useState(false);
+	useEffect(()=>{},[accept]);
 	const clickHandler = useCallback(()=>{
 		document.cookie = "ture"; setAccept(true);
-	},[accpet]);
+	},[accept]);
 	if(document.cookie === "ture"){return(<></>);}
 	return(
 	<div className={"pop-up"}>
