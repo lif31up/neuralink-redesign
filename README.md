@@ -1,7 +1,10 @@
 # 개요
 평소에 흥미롭게 생각하는 뇌공학 회사인 <a href="https://neuralink.com">NEURALINK</a>의 웹사이트를 저만의 방식으로 새롭게 디자인해보았습니다.
-## 배포된 사이트 방문하기
-Vercel을 이용해서 배포 중: https://neuralink-redesign.vercel.app/
+## 배포된 사이트로 방문하기
+<a href="https://neuralink-redesign.vercel.app/">Vercel을 통해 배포 중입니다.</a>
+### 눈여겨 보어야 할 점
+* SCSS로 의미적 요소를 추상화하여 정의하였습니다. 이를 통해 구조화된 반응형 웹 사이트를 만들 수 있었습니다. 이는 스타일의 유지보수에 대해 더 간단한 해결을 제공할 수 있습니다.
+* 주 페이지 안에서 전반적인 정보와 유지보수를 할 수 있는 요소 체계를 가지고 있습니다.
 ##  파일 체계
 ```
 Root
@@ -30,4 +33,4 @@ Root
 간단한 레이아웃이나 의미적 요소들은 반응형 웹을 위해 `SCSS`를 통해 정의됩니다. 그 외에 추가적이거나 복잡한 `CSS` 정의를 필요로 하는 요소들은 `Tailwind CSS`로 작성했습니다.
 
 ### 그 외에 고려된 점들
-최대한 Next.js와 친숙해지는 계기가 되기 위해서 Client Side Rendering과 Server Side Rendering을 최대한 그럴듯한 맥락으로 억지로도 좀 사용해보았습니다. 이 점 참고하시고 살펴보시면 감사하겠습니다.
+최대한 Next.js와 친숙해지는 계기가 되기 위해서 Client Side Rendering과 Server Side Rendering을 최대한 그럴듯한 맥락으로 사용해보았습니다. 이 점 참고하시고 살펴보시면 감사하겠습니다.
