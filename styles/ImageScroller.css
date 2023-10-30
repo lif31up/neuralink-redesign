@@ -5,6 +5,7 @@
 /*PSEUDO*/
 /*FADE*/
 .custom-image-scroller {
+  overflow: hidden;
   position: relative;
   width: calc(100% - 2rem);
   height: calc(100% - 2rem);
