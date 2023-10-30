@@ -17,8 +17,21 @@
   font-size: 1rem;
   display: inline-block;
 }
+.custom-expandable-tag span {
+  overflow: hidden;
+  display: flex;
+}
 .custom-expandable-tag p {
   animation: lazy-load 1s ease-in-out;
+}
+
+@keyframes lazy-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=ExpendableTagTable.css.map */

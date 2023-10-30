@@ -7,5 +7,11 @@
   transition: height 1s ease-in-out;
   h1{font-size: 2rem; display: inline-block; width: calc(100% - 2rem);}
   h2{font-size: 1rem; display: inline-block;}
+  span{overflow: hidden; display: flex;}
   p{animation: lazy-load 1s ease-in-out;}
+}
+
+@keyframes lazy-load {
+  0%{transform: translateY(-100%)}
+  100%{transform: translateY(0);}
 }
