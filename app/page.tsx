@@ -6,9 +6,11 @@ import Tag from "@/app/components/common/Tag";
 import Section from "@/app/components/common/Section";
 import Link from "next/link";
 import ImgBlock from "@/app/components/common/ImgBlock";
+import PopUp from "@/app/components/common/PopUp";
 export default function Home() {
   return (<>
     <title>Neuralink</title>
+    <PopUp/>
     <div className={"block min-h-screen bg-white"}>
       <TopBar>{[
         {text:"Career",href:"https://neuralink.com/careers/",class:"p-0 m-0 hover:border-b-black hover:border-b-2 hover:-mb-0.5"},
