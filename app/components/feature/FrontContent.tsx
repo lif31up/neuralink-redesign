@@ -1,4 +1,4 @@
-import "@/styles/FrontContentj.css";
+import "@/styles/FrontContent.css";
 import ImageScroller from "@/app/components/feature/ImageScroller";
 import Feed from "@/app/components/feature/Feed";
 import PatientRegistry from "@/app/components/feature/PatientRegistry";

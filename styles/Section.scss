@@ -5,3 +5,19 @@
   margin: 1rem 11rem 0 11rem; padding-bottom: 2rem;
   @include mobile{width: calc(100% - 2rem); height: fit-content; @include center-margin(1);}
 }
+.custom-view70{
+  position: relative;
+  width: 60%; height: fit-content;
+  @include mobile{width: 100%;}
+}
+.custom-view30{
+  @extend .custom-view70;
+  width: 40%;
+  @include mobile{width: 100%;}
+}
+.custom-div{
+  display: flex;
+  @include mobile{
+    display: block;
+  }
+}

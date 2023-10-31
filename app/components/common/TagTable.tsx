@@ -8,7 +8,7 @@ export default function TagTable({children,id,animation}:{children:Array<{h1:str
 	children.forEach((child,index)=>{
 		tags.push(<Tag animation={animation} h1={child.h1} p={child.p} id={[id, index.toString()].join("-").trim()} key={index}/>);
 	});
-	return(<div>{tags}</div>);
+	return(<div className={"p-4"}>{tags}</div>);
 }
 function Tag({h1,p,id,animation}:TagProps){
 	const observerRef:any = useRef(null);
@@ -27,9 +27,9 @@ function Tag({h1,p,id,animation}:TagProps){
 		};
 	},[false]);
 	return(
-	<div className={["my-4 p-4 pb-8 rounded-2xl",animation].join(" ").trim()} id={id}>
-		<h1 className={""}>{h1}</h1>
-		<p className={"text-2xl"}>{p}</p>
+	<div className={["my-2 p-2 rounded-2xl",animation].join(" ").trim()} id={id}>
+		<h1 className={"font-bold"}>{h1}</h1>
+		<p className={""}>{p}</p>
 	</div>
 	);
 }

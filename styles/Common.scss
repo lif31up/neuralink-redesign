@@ -1,5 +1,4 @@
-@import "scss/magic";
-@import "scss/magictime";
+
 .custom-outline{
   outline: solid black 1px;
 }
@@ -16,7 +15,7 @@
   animation: sink-up 1s ease-in-out paused;
 }
 .cust-space-in-down{
-  animation: spaceInDown 1s ease-in-out paused;
+  animation: sink-up 1s ease-in-out paused;
 }
 @keyframes sink-up {
   0%{opacity: 0; transform: translateX(2rem); filter: blur(2px);}

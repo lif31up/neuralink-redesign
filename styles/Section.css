@@ -20,4 +20,33 @@
   }
 }
 
+.custom-view70, .custom-view30 {
+  position: relative;
+  width: 60%;
+  height: fit-content;
+}
+@media only screen and (max-width: 500px) {
+  .custom-view70, .custom-view30 {
+    width: 100%;
+  }
+}
+
+.custom-view30 {
+  width: 40%;
+}
+@media only screen and (max-width: 500px) {
+  .custom-view30 {
+    width: 100%;
+  }
+}
+
+.custom-div {
+  display: flex;
+}
+@media only screen and (max-width: 500px) {
+  .custom-div {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=Section.css.map */
