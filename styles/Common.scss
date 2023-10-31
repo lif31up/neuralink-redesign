@@ -6,6 +6,14 @@
   display: inline-block;
   width: 1rem; height: 1rem;
   transition: transform 0.25s ease-in-out;
-}.custom-arrow:hover::after{
+}
+.custom-arrow:hover::after{
   transform: translateY(-0.25rem) translateX(0.25rem);
- }
+}
+.custom-sink-up{
+  animation: sink-up 1s ease-in-out paused;
+}
+@keyframes sink-up {
+  0%{opacity: 0;}
+  100%{opacity: 100%;}
+}

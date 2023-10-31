@@ -43,18 +43,18 @@ export default function Home() {
       </Section>
       <Section>
         <h1 className={"text-2xl"}>Implant</h1>
-        <Tag h1={"Implant"} p={"Our brain-computer interface is fully implantable, cosmetically invisible, and designed to let you control a computer or mobile device anywhere you go."}/>
-        <Tag h1={"Biocompatible Enclosure"} p={"The N1 Implant is hermetically sealed in a biocompatible enclosure that withstands physiological conditions several times harsher than those in the human body."}/>
-        <Tag h1={"Battery"} p={"The N1 Implant is powered by a small battery charged wirelessly from the outside via a compact, inductive charger that enables easy use from anywhere."}/>
-        <Tag h1={"Chips and Electronics"} p={"Advanced, custom, low-power chips and electronics process neural signals, transmitting them wirelessly to the Neuralink Application, which decodes the data stream into actions and intents."}/>
-        <Tag h1={"Threads"} p={"The N1 Implant records neural activity through 1024 electrodes distributed across 64 threads. These highly-flexible, ultra-thin threads are key to minimize damage during implantation and beyond."}/>
+        <Tag id={"a"} h1={"Implant"} p={"Our brain-computer interface is fully implantable, cosmetically invisible, and designed to let you control a computer or mobile device anywhere you go."}/>
+        <Tag id={"b"} h1={"Biocompatible Enclosure"} p={"The N1 Implant is hermetically sealed in a biocompatible enclosure that withstands physiological conditions several times harsher than those in the human body."}/>
+        <Tag id={"c"} h1={"Battery"} p={"The N1 Implant is powered by a small battery charged wirelessly from the outside via a compact, inductive charger that enables easy use from anywhere."}/>
+        <Tag id={"d"} h1={"Chips and Electronics"} p={"Advanced, custom, low-power chips and electronics process neural signals, transmitting them wirelessly to the Neuralink Application, which decodes the data stream into actions and intents."}/>
+        <Tag id={"e"} h1={"Threads"} p={"The N1 Implant records neural activity through 1024 electrodes distributed across 64 threads. These highly-flexible, ultra-thin threads are key to minimize damage during implantation and beyond."}/>
       </Section>
       <Section>
         <h1 className={"text-2xl"}>Surgical Robot</h1>
-        <Tag h1={"Surgical Robot"} p={"The threads of our implant are so fine that they can't be inserted by the human hand. Our surgical robot has been designed to reliably and efficiently insert these threads exactly where they need to be."}/>
-        <Tag h1={"Base Structure"} p={"The base structure and motion stage provide the structural platform for the robot head and the primary 3 axis linear motion used to position the robot head and needle."}/>
-        <Tag h1={"Robot Head"} p={"The robot head contains the optics and sensors of 5 camera systems and the optics for an optical coherence tomography (OCT) system."}/>
-        <Tag h1={"Needle"} p={"The needle, which is thinner than a human hair, grasps, inserts, and releases threads."}/>
+        <Tag id={"f"} h1={"Surgical Robot"} p={"The threads of our implant are so fine that they can't be inserted by the human hand. Our surgical robot has been designed to reliably and efficiently insert these threads exactly where they need to be."}/>
+        <Tag id={"g"} h1={"Base Structure"} p={"The base structure and motion stage provide the structural platform for the robot head and the primary 3 axis linear motion used to position the robot head and needle."}/>
+        <Tag id={"h"} h1={"Robot Head"} p={"The robot head contains the optics and sensors of 5 camera systems and the optics for an optical coherence tomography (OCT) system."}/>
+        <Tag id={"i"} h1={"Needle"} p={"The needle, which is thinner than a human hair, grasps, inserts, and releases threads."}/>
       </Section>
       <React.Suspense>
         <Footer/>
