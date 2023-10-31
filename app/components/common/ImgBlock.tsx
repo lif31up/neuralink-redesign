@@ -7,5 +7,5 @@ export default function ImgBlock({src,width,height}:ImgBlockProps){
 		backgroundSize: "cover",
 		backgroundPosition: "center"
 	};
-	return(<div style={style}/>);
+	return(<div style={style} className={"rounded-2xl"}/>);
 }//ImgBlock

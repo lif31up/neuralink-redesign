@@ -1,7 +1,7 @@
 @import "Library";
 .custom-section{
   position: relative;
-  width: calc(100% - 20rem); height: fit-content;
-  margin: 4rem 10rem 4rem 10rem; padding: 0 0 4rem 0;
+  width: calc(100% - 22rem); height: fit-content;
+  margin: 1rem 11rem 0 11rem; padding-bottom: 2rem;
   @include mobile{width: calc(100% - 2rem); height: fit-content; @include center-margin(1);}
 }

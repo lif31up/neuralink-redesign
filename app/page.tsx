@@ -20,21 +20,6 @@ export default function Home() {
       ]}</TopBar>
       <div className={"h-16"}/>
       <FrontContent/>
-      <ImgBlock src={"/assets/images/front_1.jpg"} width={"100%"} height={"60vh"}/>
-      <Section>
-        <h1>Career</h1>
-        <p className={"text-2xl"}>
-          Developing brain-computer interfaces is an interdisciplinary challenge. We are looking to hire a wide range of people with diverse engineering, scientific, and operations expertise.
-        </p>
-        <Link className={"absolute right-1 bottom-1 custom-arrow"} href={"career/"}>Explore All Open Roles</Link>
-      </Section>
-      <Section>
-        <h1>{"Biocompatible Enclosure"}</h1>
-        <p className={"text-2xl"}>
-          {"The N1 Implant is hermetically sealed in a biocompatible enclosure that withstands physiological conditions several times harsher than those in the human body."}
-        </p>
-        <Link className={"absolute right-1 bottom-1 custom-arrow"} href={"career/"}>See More about Biocompatible Enclosure</Link>
-      </Section>
       <Section>
         <h1>Implant</h1>
         <p className={"text-2xl"}>
@@ -51,6 +36,9 @@ export default function Home() {
           {h1:"Chips and Electronics",p:"Advanced, custom, low-power chips and electronics process neural signals, transmitting them wirelessly to the Neuralink Application, which decodes the data stream into actions and intents."},
           {h1:"Threads",p:"The N1 Implant records neural activity through 1024 electrodes distributed across 64 threads. These highly-flexible, ultra-thin threads are key to minimize damage during implantation and beyond."}
         ]}</TagTable>
+      </Section>
+      <Section>
+        <ImgBlock src={"/assets/images/front_1.jpg"} width={"100%"} height={"60vh"}/>
       </Section>
       <Section>
         <h1 className={"text-2xl"}>Surgical Robot</h1>

@@ -27,7 +27,7 @@ function Tag({h1,p,id,animation}:TagProps){
 		};
 	},[false]);
 	return(
-	<div className={["border-l-4 border-black my-4 pl-4",animation].join(" ").trim()} id={id}>
+	<div className={["my-4 p-4 pb-8 rounded-2xl",animation].join(" ").trim()} id={id}>
 		<h1 className={""}>{h1}</h1>
 		<p className={"text-2xl"}>{p}</p>
 	</div>
