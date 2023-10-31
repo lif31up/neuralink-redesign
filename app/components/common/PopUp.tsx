@@ -1,13 +1,14 @@
-'use client';//csr
-import {useCallback, useEffect, useState} from "react";
+'use client';
 import "@/styles/PopUp.css";
+import {useEffect, useState} from "react";
 export default function PopUp({}){
-	const [accept,setAccept] = useState(false);
-	useEffect(()=>{},[accept]);
-	const clickHandler = useCallback(()=>{
-		document.cookie = "ture"; setAccept(true);
-	},[accept]);
-	if(document.cookie === "ture"){return(<></>);}
+	const [active,setActive] = useState(true);
+	useEffect(()=>{
+		if(document.cookie === "true"){setActive(true);}
+		else{setActive(false);}
+	},[]);
+	const clickHandler = ()=>{document.cookie = "true"; setActive(true); console.log(document.cookie);}
+	if(active){return(<></>);}
 	return(
 	<div className={"pop-up"}>
 		<div className={"bg-white p-4 grid justify-items-center"}>
