@@ -1,3 +1,5 @@
+@import "scss/magic";
+@import "scss/magictime";
 .custom-outline{
   outline: solid black 1px;
 }
@@ -10,10 +12,13 @@
 .custom-arrow:hover::after{
   transform: translateY(-0.25rem) translateX(0.25rem);
 }
-.custom-sink-up{
+.cust-sink-up{
   animation: sink-up 1s ease-in-out paused;
 }
+.cust-space-in-down{
+  animation: spaceInDown 1s ease-in-out paused;
+}
 @keyframes sink-up {
-  0%{opacity: 0;}
-  100%{opacity: 100%;}
+  0%{opacity: 0; transform: translateX(2rem); filter: blur(2px);}
+  100%{opacity: 100%; transform: translateX(0); filter: none;}
 }

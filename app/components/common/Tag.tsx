@@ -1,38 +1,35 @@
 'use client';
 import {useEffect, useRef} from "react";
+import React from "react";
 import "@/styles/Common.css";
-interface TagProps {h1:string,p:string,id:string}
-export default function Tag({h1,p,id}:TagProps){
-	const observerRef:IntersectionObserver|any = useRef(null);
+interface TagProps {h1:string,p:string,id:string,animation:string}
+export default function TagTable({children,id,animation}:{children:Array<{h1:string,p:string}>,id:string,animation:string}){
+	const tags:Array<React.ReactNode>= [];
+	children.forEach((child,index)=>{
+		tags.push(<Tag animation={animation} h1={child.h1} p={child.p} id={[id, index.toString()].join("-").trim()} key={index}/>);
+	});
+	return(<div>{tags}</div>);
+}
+function Tag({h1,p,id,animation}:TagProps){
+	const observerRef:any = useRef(null);
 	useEffect(()=>{
-		//에니메이션은 돔 객체가 형성되고 나서 조작할 수 있습니다. 따라서 useEffect에서만 정의할 수 있습니다.
-		const option = {root: null, rootMargin: "0px", threshold: 0.75};
-		const handleIntersection = (entries:any,observer:any):void => {
-			entries.forEach((entry:any):void=>{
-				if(entry.isIntersecting){
-					//이 범위에서 교차되었을 때의 행동을 정의합니다.
-					// @ts-ignore
-					document.getElementById(id).style.animationPlayState = "running";
-				}
+		const target:HTMLElement|null = document.getElementById(id); if(target === null){return;}
+		const options:object = {root:null,rootMarign:"0px",threshold:0.75}
+		const handleIntersection = (entries:any,observer:any)=>{
+			entries.forEach((entry:any)=>{
+				if(entry.isIntersecting){target.style.animationPlayState = "running";}
 			});
-		}//handleIntersection
-		observerRef.current = new IntersectionObserver(handleIntersection, option);
-		const targetElement = document.getElementById(id);
-		if (targetElement) {
-			observerRef.current.observe(targetElement);
-		}
-
-		// Clean up the observer when the component unmounts
-		return () => {
-			if (observerRef.current) {
-				observerRef.current.disconnect();
-			}
 		};
-	},[]);
+		observerRef.current = new IntersectionObserver(handleIntersection,options);
+		if(target){observerRef.current.observe(target)}
+		return ()=>{
+			if(observerRef.current){observerRef.current.disconnect();}
+		};
+	},[false]);
 	return(
-	<div className={"border-l-black border-l-2 my-4 pl-4 shadow py-4 custom-sink-up"} id={id}>
-		<h1 className={"text-2xl"}>{h1}</h1>
-		<p>{p}</p>
+	<div className={["border-l-4 border-black my-4 pl-4",animation].join(" ").trim()} id={id}>
+		<h1 className={""}>{h1}</h1>
+		<p className={"text-2xl"}>{p}</p>
 	</div>
 	);
 }
