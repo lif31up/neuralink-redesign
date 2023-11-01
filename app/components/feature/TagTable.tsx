@@ -2,7 +2,7 @@
 import {useEffect, useRef} from "react";
 import React from "react";
 import "@/styles/Common.css";
-interface TagProps {h1:string,p:string,id:string,animation:string}
+interface TagProps {h1:string,p:string,id:string,animation:string}//에니메이션을 사용하기 위해 고정된 ID를 받습니다. 이는 이후 자식 노드들에게 전파됩니다.
 export default function TagTable({children,id,animation}:{children:Array<{h1:string,p:string}>,id:string,animation:string}){
 	const tags:Array<React.ReactNode>= [];
 	children.forEach((child,index)=>{
@@ -28,8 +28,8 @@ function Tag({h1,p,id,animation}:TagProps){
 	},[false]);
 	return(
 	<div className={["my-2 p-2 rounded-2xl",animation].join(" ").trim()} id={id}>
-		<h1 className={"font-bold"}>{h1}</h1>
-		<p className={""}>{p}</p>
+		<h1 className={"font-light text-gray-600"}>{h1}</h1>
+		<p className={"text-2xl font-light"}>{p}</p>
 	</div>
 	);
 }

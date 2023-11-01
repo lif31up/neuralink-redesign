@@ -1,7 +1,6 @@
 import Link from "next/link";
 import "@/styles/Footer.css";
-import Image from "next/image";
-import SVGBLock from "@/app/components/common/SVGBlock";
+import {SVGBlock} from "@/app/components/common/ContentBlock";
 export default function Footer({}){
 	return(
 	<section className={"custom-footer"}>
@@ -23,7 +22,7 @@ export default function Footer({}){
 			<Link className={"block hover:text-gray-400"} href={"/handler_page"}>Terms of Use</Link>
 		</div>
 		<div className={"absolute bottom-4 left-4 p-4"}>
-			<SVGBLock src={"/assets/svg/logo.svg"} width={(14 * 5).toString()} height={(14 * 2).toString()}/>
+			<SVGBlock src={"/assets/svg/logo.svg"} width={(14 * 5).toString()} height={(14 * 2).toString()}/>
 		</div>
 	</section>
 	);

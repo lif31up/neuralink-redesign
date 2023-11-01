@@ -4,7 +4,7 @@
 /*BACKGROUND*/
 /*PSEUDO*/
 /*FADE*/
-.custom-section {
+.default {
   position: relative;
   width: calc(100% - 22rem);
   height: fit-content;
@@ -12,7 +12,7 @@
   padding-bottom: 2rem;
 }
 @media only screen and (max-width: 500px) {
-  .custom-section {
+  .default {
     width: calc(100% - 2rem);
     height: fit-content;
     margin-left: 1rem;
@@ -20,33 +20,27 @@
   }
 }
 
-.custom-view70, .custom-view30 {
-  position: relative;
-  width: 60%;
-  height: fit-content;
-}
-@media only screen and (max-width: 500px) {
-  .custom-view70, .custom-view30 {
-    width: 100%;
-  }
-}
-
-.custom-view30 {
-  width: 40%;
-}
-@media only screen and (max-width: 500px) {
-  .custom-view30 {
-    width: 100%;
-  }
-}
-
-.custom-div {
+.top-bar {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 4rem;
+  padding: 0 4rem 0 1rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid black 1px;
+  background: white;
+  transition: height 1s linear;
 }
 @media only screen and (max-width: 500px) {
-  .custom-div {
-    display: block;
+  .top-bar {
+    padding: 0 1rem 0 0.5rem;
   }
+}
+
+.top-bar.shrink {
+  height: 3rem;
 }
 
 /*# sourceMappingURL=Section.css.map */

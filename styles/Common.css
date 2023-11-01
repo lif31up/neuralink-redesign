@@ -1,6 +1,33 @@
 @charset "UTF-8";
+/*BOX*/
+/*FLEX TOOLKIT*/
+/*FONT*/
+/*BACKGROUND*/
+/*PSEUDO*/
+/*FADE*/
 .custom-outline {
   outline: solid black 1px;
+}
+
+a.custom-outline {
+  outline: solid black 1px;
+  padding: 0.2rem 1rem 0.3rem 1rem;
+  border-radius: 2rem;
+}
+
+a.custom-outline:hover {
+  background: black;
+  color: white;
+}
+
+.border-b-black-1 {
+  border-bottom: solid #eaeaea 1px;
+}
+
+@media only screen and (max-width: 500px) {
+  .custom-mob-none {
+    display: none;
+  }
 }
 
 .custom-arrow::after {
@@ -13,27 +40,6 @@
 
 .custom-arrow:hover::after {
   transform: translateY(-0.25rem) translateX(0.25rem);
-}
-
-.cust-sink-up {
-  animation: sink-up 1s ease-in-out paused;
-}
-
-.cust-space-in-down {
-  animation: sink-up 1s ease-in-out paused;
-}
-
-@keyframes sink-up {
-  0% {
-    opacity: 0;
-    transform: translateX(2rem);
-    filter: blur(2px);
-  }
-  100% {
-    opacity: 100%;
-    transform: translateX(0);
-    filter: none;
-  }
 }
 
 /*# sourceMappingURL=Common.css.map */

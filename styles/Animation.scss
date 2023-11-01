@@ -1,0 +1,9 @@
+//Classes
+.anime-sink-up{animation: sink-up 1s ease-in-out paused;}
+.anime-space-in-down{animation: sink-up 1s ease-in-out paused;}
+
+//Keyframes
+@keyframes sink-up {
+  0%{opacity: 0; transform: translateX(2rem); filter: blur(2px);}
+  100%{opacity: 100%; transform: translateX(0); filter: none;}
+}

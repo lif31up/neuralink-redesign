@@ -2,7 +2,6 @@
 import "@/styles/ImageScroller.css";
 import {atom, RecoilRoot, useRecoilState, useRecoilValue} from "recoil";
 import {useCallback} from "react";
-import ImgBlock from "@/app/components/common/ImgBlock";
 import Image from "next/image";
 export default function RecoilImageScroller(){
 	return(
