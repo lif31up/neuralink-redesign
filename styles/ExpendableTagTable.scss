@@ -1,3 +1,4 @@
+@import "Library";
 .custom-expandable-tag-table{
   display: flex; flex-direction: column;
 }
@@ -5,7 +6,10 @@
   cursor: pointer;
   border-bottom: solid black 1px;
   transition: height 1s ease-in-out;
-  h1{font-size: 2rem; display: inline-block; width: calc(100% - 2rem);}
+  h1{
+    font-size: 2rem; display: inline-block; width: calc(100% - 2rem);
+    @include mobile{font-size: 1.5rem; padding-bottom: 0.5rem;}
+  }
   h2{font-size: 1rem; display: inline-block;}
   span{overflow: hidden; display: flex;}
   p{animation: lazy-load 1s ease-in-out;}

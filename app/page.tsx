@@ -10,7 +10,7 @@ import Image from "next/image";
 const Footer = lazy(()=>import("@/app/components/common/Footer"));
 export default function Home() {
   return (
-  <main>
+  <main className={"snap-y"}>
     <title>Neuralink</title>
     <TopBar/>
     <PopUp/>
@@ -27,8 +27,8 @@ export default function Home() {
       ]}</TagTable>
     </Section>
     <Section className={"w-full h-fit relative"} layout={""}>
-      <div className={"w-full h-screen"}>
-        <Image src={"/assets/images/surgical_robot.webp"} alt={"alt"} layout={"fill"} objectPosition={"center"} objectFit={"cover"}/>
+      <div className={"w-full h-screen snap-start"}>
+        <Image src={"/assets/images/surgical_robot.avif"} alt={"alt"} layout={"fill"} objectPosition={"center"} objectFit={"cover"}/>
       </div>
     </Section>
     <React.Suspense>
