@@ -1,9 +1,10 @@
+@import "/styles/magic-master/assets/scss/magic.css";
 .anime-sink-up {
   animation: sink-up 1s ease-in-out paused;
 }
 
-.anime-space-in-down {
-  animation: sink-up 1s ease-in-out paused;
+.anime-vanish-in {
+  animation: boingInUp 1s ease-in-out paused;
 }
 
 @keyframes sink-up {
@@ -16,6 +17,29 @@
     opacity: 100%;
     transform: translateX(0);
     filter: none;
+  }
+}
+@keyframes boingInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(-90deg);
+    transform: perspective(800px) rotateX(-90deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(50deg);
+    transform: perspective(800px) rotateX(50deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(800px) rotateX(0deg);
+    transform: perspective(800px) rotateX(0deg);
   }
 }
 

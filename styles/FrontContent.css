@@ -67,5 +67,12 @@
   height: calc(100% - 2rem);
   overflow: hidden;
 }
+@media only screen and (max-width: 500px) {
+  .custom-front-content-block {
+    border: solid black 1px;
+    border-radius: 1rem;
+    scroll-snap-align: center;
+  }
+}
 
 /*# sourceMappingURL=FrontContent.css.map */

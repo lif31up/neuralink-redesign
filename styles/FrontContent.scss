@@ -37,4 +37,5 @@ $height: calc(100vh - 4rem);
 .custom-front-content-block{
   width: calc(100% - 2rem); height: calc(100% - 2rem);
   overflow: hidden;
+  @include mobile{border: solid black 1px; border-radius: 1rem; scroll-snap-align: center;}
 }
