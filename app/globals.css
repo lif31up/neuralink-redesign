@@ -20,3 +20,6 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white;
 }
+html{
+  scroll-snap-type: y proximity;
+}

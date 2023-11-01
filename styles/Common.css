@@ -30,6 +30,14 @@ a.custom-outline:hover {
   }
 }
 
+.custom-snap-align-self {
+  scroll-snap-type: y mandatory;
+}
+
+.custom-snap-align-center {
+  scroll-snap-align: center;
+}
+
 .custom-arrow::after {
   content: "↗";
   display: inline-block;

@@ -2,9 +2,9 @@ import "@/styles/FrontContent.css";
 import ImageScroller from "@/app/components/feature/ImageScroller";
 import Feed from "@/app/components/feature/Feed";
 import PatientRegistry from "@/app/components/feature/PatientRegistry";
-export default function FrontContent(){
+export default function FrontContent({className}:{className:string}){
 	return(
-	<div className={"custom-front-content"}>
+	<div className={["custom-front-content",className].join(" ").trim()}>
 		<div className={"custom-front-content-left"}>
 			<ImageScroller/>
 		</div>

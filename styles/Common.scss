@@ -15,6 +15,12 @@ a.custom-outline:hover{background: black; color: white;}
 .custom-mob-none{
   @include mobile{display: none;}
 }
+.custom-snap-align-self{
+  scroll-snap-type: y mandatory;
+}
+.custom-snap-align-center{
+  scroll-snap-align: center;
+}
 
 //pseudo element
 .custom-arrow::after{
