@@ -36,9 +36,9 @@ export default function Home() {
     }}</ImageArticle>
     <ImageArticle className={"custom-snap-align-center"}>{{
       src:"/assets/images/surgical_robot_1.avif",
-      h1:"Patient Registry",
-      p:"If you're interested in learning whether you may qualify for current and/or future Neuralink clinical trials, consider joining our Patient Registry.",
-      link:<Link href={"/"} className={"absolute bottom-4 underline font-light custom-arrow"}>Join Our Patient Registry</Link>
+      h1:"Careers",
+      p:"Developing brain-computer interfaces is an interdisciplinary challenge. We are looking to hire a wide range of people with diverse engineering, scientific, and operations expertise.",
+      link:<Link href={"/"} className={"absolute bottom-4 underline font-light custom-arrow"}>Explore All Open Roles</Link>
     }}</ImageArticle>
     <React.Suspense>
       <Footer/>
