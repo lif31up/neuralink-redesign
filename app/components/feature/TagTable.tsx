@@ -2,19 +2,19 @@
 import {useEffect, useRef} from "react";
 import React from "react";
 import "@/styles/Common.css";
-interface TagProps {h1:string,p:string,id:string,animation:string}//에니메이션을 사용하기 위해 고정된 ID를 받습니다. 이는 이후 자식 노드들에게 전파됩니다.
+interface TagProps {h1:string,p:string,id:string,animation:string,rootId:string}//에니메이션을 사용하기 위해 고정된 ID를 받습니다. 이는 이후 자식 노드들에게 전파됩니다.
 export default function TagTable({children,id,animation,className}:{children:Array<{h1:string,p:string}>,id:string,animation:string,className:string}){
 	const tags:Array<React.ReactNode>= [];
 	children.forEach((child,index)=>{
-		tags.push(<Tag animation={animation} h1={child.h1} p={child.p} id={[id, index.toString()].join("-").trim()} key={index}/>);
+		tags.push(<Tag animation={animation} h1={child.h1} p={child.p} id={[id, index.toString()].join("-").trim()} rootId={id} key={index}/>);
 	});
-	return(<div className={"overflow-hidden"}>{tags}</div>);
+	return(<div className={["overflow-hidden",className].join(" ").trim()}>{tags}</div>);
 }
-function Tag({h1,p,id,animation}:TagProps){
+function Tag({h1,p,id,animation,rootId}:TagProps){
 	const observerRef:any = useRef(null);
 	useEffect(()=>{
 		const target:HTMLElement|null = document.getElementById(id); if(target === null){return;}
-		const options:object = {root:null,rootMargin:"0px",threshold:0.75}
+		const options:object = {root:document.getElementById(rootId),rootMargin:"0px",threshold:0.75}
 		const handleIntersection = (entries:any,observer:any)=>{
 			entries.forEach((entry:any)=>{
 				if(entry.isIntersecting){target.style.animationPlayState = "running";}

@@ -1,4 +1,7 @@
 @import "Library";
+@include mobile{
+  html{scroll-snap-type: y proximity;}
+}
 //atomic class
 .custom-outline{
   outline: solid black 1px;

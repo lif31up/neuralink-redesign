@@ -5,6 +5,11 @@
 /*BACKGROUND*/
 /*PSEUDO*/
 /*FADE*/
+@media only screen and (max-width: 500px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+}
 .custom-outline {
   outline: solid black 1px;
 }
