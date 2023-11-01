@@ -19,7 +19,7 @@ function ExpandableTag({h1,p,id}:ExpandableTagProps){
 	}//clickHandler
 	return(
 	<div className={"custom-expandable-tag"} onClick={clickHandler} id={id}>
-		<h1>{h1}</h1>
+		<h1 className={"font-light"}>{h1}</h1>
 		<span><p>{p}</p></span>
 	</div>
 	);
