@@ -71,7 +71,6 @@
   .custom-front-content-block {
     border: solid black 1px;
     border-radius: 1rem;
-    scroll-snap-align: center;
   }
 }
 

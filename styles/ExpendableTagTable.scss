@@ -2,6 +2,10 @@
 .custom-expandable-tag-table{
   display: flex; flex-direction: column;
   padding: 0 5rem 0 5rem; margin-top: 1rem;
+  @include mobile{
+    padding: 0 1rem 0 1rem;
+    margin-top: 0.5rem;
+  }
 }
 .custom-expandable-tag{
   cursor: pointer;

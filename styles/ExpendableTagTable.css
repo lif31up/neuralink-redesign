@@ -10,6 +10,12 @@
   padding: 0 5rem 0 5rem;
   margin-top: 1rem;
 }
+@media only screen and (max-width: 500px) {
+  .custom-expandable-tag-table {
+    padding: 0 1rem 0 1rem;
+    margin-top: 0.5rem;
+  }
+}
 
 .custom-expandable-tag {
   cursor: pointer;

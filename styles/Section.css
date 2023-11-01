@@ -33,7 +33,7 @@
   border-bottom: solid black 1px;
   background: white;
   perspective: none;
-  transition: height 1s linear;
+  transition: height 0.5s linear;
 }
 @media only screen and (max-width: 500px) {
   .top-bar {
