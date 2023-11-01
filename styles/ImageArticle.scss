@@ -9,7 +9,10 @@
 .image-article-top{
   position: relative;
   width: 100%; height: fit-content;
-  padding: 4rem; @include mobile{padding: 1rem 1rem 4rem 1rem;}
-  background: white;
-  border-bottom: solid black 1px;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: solid black 1px; border-top: solid black 1px;
+  @include mobile{
+    padding: 4rem 1rem 4rem 1rem;
+  }
 }

@@ -1,21 +1,34 @@
 @import "Library";
 .custom-expandable-tag-table{
   display: flex; flex-direction: column;
+  padding: 0 5rem 0 5rem; margin-top: 1rem;
 }
 .custom-expandable-tag{
   cursor: pointer;
   border-bottom: solid black 1px;
+  height: fit-content;
   transition: height 1s ease-in-out;
   h1{
     font-size: 2rem; display: inline-block; width: calc(100% - 2rem);
     @include mobile{font-size: 1.5rem; padding-bottom: 0.5rem;}
+    user-select: none;
   }
-  h2{font-size: 1rem; display: inline-block;}
-  span{overflow: hidden; display: flex;}
-  p{animation: lazy-load 1s ease-in-out;}
+  span{
+    display: none;
+    overflow: hidden;
+  }
+  p{
+    animation: lazy-load 1s ease-in-out; padding-bottom: 1rem;
+  }
+}
+.custom-expandable-tag.active{
+  span{display: block;}
 }
 
 @keyframes lazy-load {
-  0%{transform: translateY(-100%)}
-  100%{transform: translateY(0);}
+  0%{transform: translateY(-100%); filter: blur(2px);}
+  100%{transform: translateY(0); filter: none;}
+}
+.custom-expandable-tag-active{
+  height: fit-content;
 }

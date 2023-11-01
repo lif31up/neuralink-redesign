@@ -20,12 +20,13 @@
   width: 100%;
   height: fit-content;
   padding: 4rem;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   border-bottom: solid black 1px;
+  border-top: solid black 1px;
 }
 @media only screen and (max-width: 500px) {
   .image-article-top {
-    padding: 1rem 1rem 4rem 1rem;
+    padding: 4rem 1rem 4rem 1rem;
   }
 }
 

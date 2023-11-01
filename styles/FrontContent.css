@@ -14,9 +14,9 @@
 @media only screen and (max-width: 500px) {
   .custom-front-content {
     display: grid;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    width: calc(100% - 1rem);
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: 100%;
     padding: 0;
     height: fit-content;
   }

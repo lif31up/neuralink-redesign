@@ -24,7 +24,7 @@ function ImageScroller({}){
 	activeStatus[activeIndex] = true;
 	return(
 	<div className={"custom-image-scroller"}>
-		<Image src={ImageScrollerData[activeIndex].src} layout={"fill"} alt={""} objectPosition={"center"} objectFit={"cover"}/>
+		<Image src={ImageScrollerData[activeIndex].src} layout={"fill"} alt={"img"} objectPosition={"right"} objectFit={"cover"}/>
 		<div className={"custom-image-scroller-button-table absolute"}>
 			<Menu text={ImageScrollerData[0].text} active={activeStatus[0]} index={0}/>
 			<Menu text={ImageScrollerData[1].text} active={activeStatus[1]} index={1}/>
