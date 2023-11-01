@@ -3,8 +3,8 @@ $height: calc(100vh - 4rem);
 
 .custom-front-content{
   display: flex;
-  width: calc(100% - 20rem); height: $height;
-  margin: 0 10rem 0 10rem; padding: 1rem 0 2rem 0;
+  width: calc(100% - 12rem); height: $height;
+  margin: 0 2rem 0 10rem; padding: 1rem 0 2rem 0;
   @include mobile{
     display: grid;
     @include center-margin(0.5);
