@@ -5,27 +5,31 @@
 /*PSEUDO*/
 /*FADE*/
 .image-article {
+  overflow: hidden;
   position: relative;
-  width: 100%;
   height: 45rem;
+  width: 70%;
 }
 @media only screen and (max-width: 500px) {
   .image-article {
     height: 35rem;
+    width: 100%;
   }
 }
 
 .image-article-top {
   position: relative;
-  width: 100%;
+  width: 50%;
   height: fit-content;
   padding: 4rem;
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: solid black 1px;
-  border-top: solid black 1px;
+  margin-left: 5rem;
+  border: solid black 1px;
+  background: rgb(255, 255, 255);
 }
 @media only screen and (max-width: 500px) {
   .image-article-top {
+    width: 100%;
+    margin: 0;
     padding: 4rem 1rem 4rem 1rem;
   }
 }

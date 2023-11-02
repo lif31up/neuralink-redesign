@@ -12,7 +12,7 @@
   height: fit-content;
   transition: height 1s ease-in-out;
   h1{
-    font-size: 2rem; display: inline-block; width: calc(100% - 2rem);
+    font-size: 2rem; display: inline-block; width: calc(100% - 2rem); padding-bottom: 0.6rem;
     @include mobile{font-size: 1.5rem; padding-bottom: 0.5rem;}
     user-select: none;
   }
@@ -21,6 +21,7 @@
     overflow: hidden;
   }
   p{
+    line-height: 1.6rem;
     animation: lazy-load 1s ease-in-out; padding-bottom: 1rem;
   }
 }
@@ -29,8 +30,8 @@
 }
 
 @keyframes lazy-load {
-  0%{transform: translateY(-100%); filter: blur(2px);}
-  100%{transform: translateY(0); filter: none;}
+  0%{transform: translateY(-100%); filter: blur(4px); opacity: 0;}
+  100%{transform: translateY(0); filter: none; opacity: 1;}
 }
 .custom-expandable-tag-active{
   height: fit-content;

@@ -9,7 +9,8 @@ export default function ImageArticle({children,className}:{children:ImageArticle
 			<Image src={children.src} alt={"image-article"} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
 		</div>
 		<div className={"image-article-top"}>
-			<h1 className={"font-light"}>{children.h1}</h1>
+			<p className={"text-neutral-500"}>{"Article"}</p>
+			<h1 className={"font-light text-3xl pb-2"}>{children.h1}</h1>
 			<p className={"text-2xl font-light w-5/6"}>{children.p}</p>
 			{children.link}
 		</div>

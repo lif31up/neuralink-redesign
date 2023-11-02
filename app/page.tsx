@@ -24,7 +24,7 @@ export default function Home() {
       {h1:"Does adding my information to the Patient Registry help me qualify for current and/or future clinical trials?",p:"We may use the information you provide to determine your preliminary eligibility for current and/or future Neuralink clinical trials. Participation in the Patient Registry is however not a prerequisite or sufficient for later participation in a Neuralink clinical trial. You will not be considered enrolled into any Neuralink clinical trials and/or research study by participating in the Patient Registry. You will be asked to review and sign a separate informed consent document before participating in any current and/or future Neuralink clinical trial. Neuralink currently has one clinical trial available for enrollment."}
     ]}</ExpandableTagTable>
     <FrontContent className={""}/>
-    <Section className={""} layout={"default"}>
+    <Section className={"custom-border-y-black-1"} layout={"default"}>
       <TagTable id={"tt-0"} animation={"anime-sink-up"} className={""}>{[
         {h1:"Surgical Robot",p:"The threads of our implant are so fine that they can't be inserted by the human hand. Our surgical robot has been designed to reliably and efficiently insert these threads exactly where they need to be."},
         {h1:"Base Structure",p:"The base structure and motion stage provide the structural platform for the robot head and the primary 3 axis linear motion used to position the robot head and needle."},
@@ -32,13 +32,13 @@ export default function Home() {
         {h1:"Needle",p:"The needle, which is thinner than a human hair, grasps, inserts, and releases threads."},
       ]}</TagTable>
     </Section>
-    <ImageArticle className={"snap-start"}>{{
+    <ImageArticle className={"pt-8"}>{{
       src:"/assets/images/surgical_robot.avif",
       h1:"Patient Registry",
       p:"If you're interested in learning whether you may qualify for current and/or future Neuralink clinical trials, consider joining our Patient Registry.",
       link:<Link href={"/"} className={"absolute bottom-4 underline font-light custom-arrow"}>Join Our Patient Registry</Link>
     }}</ImageArticle>
-    <ImageArticle className={"snap-start"}>{{
+    <ImageArticle className={""}>{{
       src:"/assets/images/surgical_robot_1.avif",
       h1:"Careers",
       p:"Developing brain-computer interfaces is an interdisciplinary challenge. We are looking to hire a wide range of people with diverse engineering, scientific, and operations expertise.",

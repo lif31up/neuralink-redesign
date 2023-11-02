@@ -6,7 +6,6 @@
   display: block;
   background-size: cover; background-position: center;
   padding: 1rem;
-  border-radius: 1rem;
   h1{
     position: absolute; bottom: 1rem;  color: white;
   }
@@ -18,7 +17,6 @@
   button{
     font-size: 0.75rem;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    border-radius: 1rem;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     @include mobile{width: fit-content;}

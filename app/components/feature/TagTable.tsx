@@ -28,8 +28,8 @@ function Tag({h1,p,id,animation,rootId}:TagProps){
 	},[false]);
 	return(
 	<div className={["my-2 p-2 rounded-2xl",animation].join(" ").trim()} id={id}>
-		<h1 className={"font-light text-gray-600"}>{h1}</h1>
-		<p className={"text-2xl font-light"}>{p}</p>
+		<h1 className={"font-light text-neutral-900"}>{h1}</h1>
+		<p className={"font-light text-3xl"}>{p}</p>
 	</div>
 	);
 }

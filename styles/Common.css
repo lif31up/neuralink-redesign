@@ -43,6 +43,11 @@ a.custom-outline:hover {
   scroll-snap-align: center;
 }
 
+.custom-border-y-black-1 {
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
 .custom-arrow::after {
   content: "↗";
   display: inline-block;

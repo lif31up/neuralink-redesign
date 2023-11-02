@@ -13,7 +13,6 @@
   background-size: cover;
   background-position: center;
   padding: 1rem;
-  border-radius: 1rem;
 }
 .custom-image-scroller h1 {
   position: absolute;
@@ -35,7 +34,6 @@
 .custom-image-scroller-button-table button {
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-  border-radius: 1rem;
   color: white;
   background: rgba(0, 0, 0, 0.5);
 }

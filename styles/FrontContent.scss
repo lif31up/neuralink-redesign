@@ -3,12 +3,11 @@ $height: calc(100vh - 4rem);
 
 .custom-front-content{
   display: flex;
-  width: calc(100% - 12rem); height: $height;
-  margin: 0 2rem 0 10rem; padding: 1rem 0 2rem 0;
+  width: calc(100% - 14rem); height: $height;
+  margin: 0 4rem 0 10rem; padding: 1rem 0 2rem 0;
   @include mobile{
     display: grid;
-    @include center-margin(0);
-    width: 100%;
+    width: 100%; @include center-margin(0);
     padding: 0; height: fit-content;
   }
 }
@@ -37,5 +36,6 @@ $height: calc(100vh - 4rem);
 .custom-front-content-block{
   width: calc(100% - 2rem); height: calc(100% - 2rem);
   overflow: hidden;
-  @include mobile{border: solid black 1px; border-radius: 1rem;}
+  border: solid black 1px;
+  @include mobile{border: solid black 1px;}
 }

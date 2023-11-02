@@ -24,6 +24,9 @@ a.custom-outline:hover{background: black; color: white;}
 .custom-snap-align-center{
   scroll-snap-align: center;
 }
+.custom-border-y-black-1{
+  border-top: solid black 1px; border-bottom: solid black 1px;
+}
 
 //pseudo element
 .custom-arrow::after{
