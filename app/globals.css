@@ -1,4 +1,7 @@
-@import "styles/Border.css";
+@import "@/styles/Border.css";
+@import "@/styles/FontSize.css";
+@import "@/styles/TextColor.css";
+@import "@/styles/Background.css";
 
 @tailwind base;
 @tailwind components;
@@ -16,7 +19,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-body {
-  color: rgb(var(--foreground-rgb));
-  background: white;
+body {}
+html {
+  font-size: 10px;
 }

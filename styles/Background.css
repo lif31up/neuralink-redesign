@@ -1,0 +1,14 @@
+/*neutrals*/
+/*black*/
+/*low color*/
+/*middle color*/
+/*high color*/
+._bg-gradient-0 {
+  background: linear-gradient(to left, #9c9cff, #788ee5, #ffafff, #9cb4ff);
+}
+
+._bg-neutral-0 {
+  background: rgb(125, 125, 125);
+}
+
+/*# sourceMappingURL=Background.css.map */
