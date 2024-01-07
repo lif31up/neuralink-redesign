@@ -1,30 +1,36 @@
-'use client';
-import {SVGBlock} from "@/app/components/common/ContentBlock";
-import Link from "next/link";
-import {useEffect} from "react";
-import "@/styles/Common.css";
-import "@/styles/Section.css";
-export default function TopBar({}){
-	//수축과 확장이 가능한 상단 창입니다.
-	useEffect(()=>{
-		const topBar:HTMLElement|null = document.getElementById("top-bar");
-		if(topBar === null){return;}
-		window.addEventListener("scroll",():void=>{
-			if(window.scrollY > 1){topBar.classList.add("shrink");}
-			else{topBar.classList.remove("shrink");}
-		});
-	},[false]);
-	return(
-	<>
-		<div className={"top-bar"} id={"top-bar"}>
-			<SVGBlock src={"/assets/svg/logo.svg"} width={""} height={"50%"}/>
-			<div className={"flex gap-12 items-center"}>
-				<Link href={"/career"} className={"custom-mob-none"}>Career</Link>
-				<Link href={"/contact"} className={"custom-mob-none"}>Contact</Link>
-				<Link href={"/patient_registry"} className={"custom-outline"}>Patient Registry</Link>
-			</div>
-		</div>
-		<div className={"h-16"}/>
-	</>
-	);
+'use client'
+
+import React, { useEffect } from 'react'
+import Link from 'next/link'
+
+const style: React.CSSProperties = {
+  width: '100%',
+  height: '4rem',
+}
+const id: string = 'top-bar'
+export default function TopBar(): React.JSX.Element {
+  useEffect((): void => {
+    let topBar: null | HTMLElement = document.getElementById(id)
+    if (topBar === null) return
+  }, [false])
+
+  return (
+    <section title="top-bar-section">
+      <div
+        style={style}
+        id={id}
+        className="fixed top-0 left-0 flex justify-between items-center z-50 px-8 -mt-1 _border-b-neutral-0 bg-white"
+      >
+        <div title="left" className="w-fit h-fit flex align-middle">
+          FUCK
+        </div>
+        <div title="right" className="w-fit h-fit flex align-middle gap-8">
+          <Link href="">Career</Link>
+          <Link href="">Blog</Link>
+          <Link href="">Patient Registry</Link>
+        </div>
+      </div>
+      <div style={style} />
+    </section>
+  )
 }
